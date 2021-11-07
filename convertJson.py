@@ -19,6 +19,7 @@ for i in data['program']['data']:
     str_data.append(a)
 
 data['program']['data'] = str_data
+data['program']['prime'] = str(data['program']['prime'])
 # Closing file
 f.close()
 
