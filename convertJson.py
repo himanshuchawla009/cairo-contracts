@@ -18,8 +18,11 @@ for i in data['program']['data']:
     a = str(i)
     str_data.append(a)
 
-print(str_data)
 data['program']['data'] = str_data
-f.write(json.dumps(data))
 # Closing file
 f.close()
+
+with open('account_compiled.json', "w") as outfile:
+    outfile.write(json.dumps(data))
+    outfile.close()
+
